@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment</title>
+    <link rel="stylesheet" href="./style/index.css">
 </head>
 <body onload="drag('box')">
     <!-- //4 boxes -->
+    <h1>Drag Me Drop Me</h1>
+    <img src="https://kalvium.com/wp-content/uploads/2023/04/Kalvium-Logo-SVG.svg"/>
     <div class="container">
-        <div class="box" style="background-color: red;">1</div>
-        <div class="box" style="background-color: green;">2</div>
-        <div class="box" style="background-color: yellow;">3</div>
-        <div class="box" style="background-color: black;">4</div>
+        <div class="box" style="background-color: red;"></div>
+        <div class="box" style="background-color: green;"></div>
+        <div class="box" style="background-color: yellow;"></div>
+        <div class="box" style="background-color: black;"></div>
         
     </div> 
     <!-- //javascript part starts here** -->
@@ -25,7 +28,7 @@
                 index.style.position = "absolute";
                     chooseElement=index
                     document.onmousemove=(item)=>{
-                        
+
                         var x=item.pageX;
                         var y=item.pageY;
                    
